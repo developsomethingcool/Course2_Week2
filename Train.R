@@ -1,0 +1,1 @@
+# Use of the R letters character vector and the R paste and which and tolower functions; 
