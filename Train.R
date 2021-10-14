@@ -97,3 +97,20 @@ getPrimeNumbers <- function(N){
     return(vect_prime_numbers)
 }
 print(getPrimeNumbers(5))
+
+#Creating a DataFrame
+name <- c('Ukraine', 'USA', 'France')
+population <- c(43, 320, 67)
+theritory <- c(603, 9400, 553)
+
+countries <- data.frame(Name = name, Population = population, Theritory = theritory)
+print(countries)
+
+#Read DataFrame from csv
+polution_data <- read.csv("specdata/001.csv")
+print(head(polution_data))
+
+#files
+lst_files <- list.files(path = 'specdata')
+lst_patterns <- grep("1.csv", lst_files)
+info <- file.info(lst_files)
